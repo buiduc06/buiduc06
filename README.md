@@ -1,14 +1,41 @@
-### Hi there 👋
+```
+<?php
 
-**buiduc06/buiduc06** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+namespace BuiNgocDuc;
 
-Here are some ideas to get you started:
+class About extends Me
+{
+    public function getCurrentWorkplace(): array
+    {
+        return [
+            'workplace' => [
+                'company' => 'VietName',
+                'position' => 'Developer'         
+            ]
+        ];
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+    public function getDailyKnowledge(): array
+    {
+        return [
+            Php::class,
+            Javascript::class,
+            Laravel::class,
+            Lumen::class,
+            Vuejs::class,
+            Angular::class,
+            React::class,
+            Nodejs::class,
+            HtmlCss:class,
+            Elasticsearch::class,
+            Aws::class,
+            BA::class
+        ];
+    }
+    
+    public function getFutureGoal(): string
+    {
+        return 'To become a professional Technical Project Manager.';
+    }
+}
+```
