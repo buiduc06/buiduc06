@@ -20,6 +20,7 @@ class About extends Me
         return [
             Php::class,
             Javascript::class,
+            Typescript::class,
             Laravel::class,
             Lumen::class,
             Vuejs::class,
